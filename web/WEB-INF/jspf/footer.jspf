@@ -1,6 +1,4 @@
 <%-- any content can be specified here e.g.: --%>
 <%@ page pageEncoding="UTF-8" %>
-<div class='divfooter'>
-<hr><br><br><center><footer class="footerbody">GitHub do Projeto: <a href=\"https://github.com/junioracamargo/projeto03\">Projeto Amortizador</a></footer></center><br><br>
-</div>
-                    
+<%-- Footer --%>
+<hr><br><br><center><footer class="footerbody">GitHub do Projeto: <a href="https://github.com/junioracamargo/projeto03">Projeto Amortização.calc</a></footer></center><br><br>       

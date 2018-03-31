@@ -1,130 +1,70 @@
 .imgdev {
-
 	width: 150;
-
 	height: 150;
-
 	border-style: solid;
-
-	border-color: #4D658D;
-
-	padding: 1px;
-
+	border-image-width: #000000;
+	padding: 15px;
 }
-
 
 .navbar {
-
 	font-family: 'Roboto Slab', serif;
-        background-color: #2A7E43;
 	font-weight: bold;
-
-}
-
-.nav-item:hover {
-    background-color: #7689A9;
 }
 
 .h5body {
-
 	font-family: 'Roboto Slab', serif;
-
-	font-weight: 900;
-        color: #fff;
+	font-weight: bold;
 	font-size: 120%;
-
 }
-
-
 
 .h4body {
-
 	font-family: 'Roboto Slab', serif;
-
 	font-weight: bold;
-
 	font-size: 140%;
-
 }
-
-
 
 .pbody {
-
 	font-family: 'Roboto Slab', serif;
-        color: #fff;
-        font-weight: 700;
-
 }
-
-
 
 .footerbody {
-
-        color: #fff;
 	font-family: 'Roboto Slab', serif;
 	font-size: 120%
-         
-}
-
-.divfooter {
-    background-color:  #2A7E43;
 }
 
 .bttbody {
-
 	font-family: 'Roboto Slab', serif;
-
 }
-
 
 .bannerbody {
-
-	width: 1219;
-        height: 443;
-
+	width: 100%;
+	border-style: solid;
+	border-image-width: #000000;
+	padding: 0px;
 }
 
-div {
-    text-align: justify;
+.divOne{
+    margin-top: 15px;
+    
 }
-
-.bodycolor {
-    background-color: #4F9D66;
+.botao{ 
+    margin-top: 30px;
+    margin-left:100px; 
+    padding: 20px;
+    font-size: 25px;
 }
-
-a:link {
-    color: #E7F6A4;
-    text-decoration: none;
+.impar{
+    background-color:  #99ccff;
+    margin: 0;
+    margin-left: 25px;
+    position: relative;
+    text-align: center;
 }
+.par{
+    background-color:  #66ffff;
+    margin: 0;
+    margin-left: 25px;
+    position: relative;
+    text-align: center;
 
-a:hover {
-    color: #BACD66;
-    text-decoration: none;
-}
-
-a:active {
-    color: #BACD66;
-    text-decoration: none;
-}
-
-a:visited {
-    color: #687B14;
-    text-decoration: none;
-}
-
-.pdes {
-    color: white;
-    text-shadow: 2px 2px 4px #000000;
-    font-size: 140%;
-}
-
-.h5des {
-    color: white;
-    text-shadow: 2px 2px 4px #000000;
-    font-size: 170%;
-}
-
-.cardbg {
-    background-color: #2D4671;
 }
