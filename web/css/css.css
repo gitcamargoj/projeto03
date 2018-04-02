@@ -7,33 +7,33 @@
 }
 
 .navbar {
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Comfortaa', cursive;
 	font-weight: bold;
 }
 
 .h5body {
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Comfortaa', cursive;
 	font-weight: bold;
 	font-size: 120%;
 }
 
 .h4body {
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Comfortaa', cursive;
 	font-weight: bold;
 	font-size: 140%;
 }
 
 .pbody {
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Comfortaa', cursive;
 }
 
 .footerbody {
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Comfortaa', cursive;
 	font-size: 120%
 }
 
 .bttbody {
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Comfortaa', cursive;
 }
 
 .bannerbody {
@@ -52,19 +52,4 @@
     margin-left:100px; 
     padding: 20px;
     font-size: 25px;
-}
-.impar{
-    background-color:  #99ccff;
-    margin: 0;
-    margin-left: 25px;
-    position: relative;
-    text-align: center;
-}
-.par{
-    background-color:  #66ffff;
-    margin: 0;
-    margin-left: 25px;
-    position: relative;
-    text-align: center;
-
 }
