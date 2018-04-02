@@ -19,7 +19,7 @@
             <img class="card-img-top bannerbody" src="img/banner/dollar_banner.png" alt="notas de dólar americano enroladas">
             <div class="card-body">
                 <h5 class="card-title h5body">Amortização.calc</h5>
-                <p class="card-text pdes">O Amortização.calc é um site bem esperto feito em Java EE com o objetivo de realizar o cálculo das amortizações do Modelo Constante, Modelo Americano e da Tabela Price. E apesar de parecer e me comportar como uma página HTML, na verdade sou um JSP! Quer saber mais sobre JSP? Então <a href='https://pt.wikipedia.org/wiki/JavaServer_Pages'>clica aqui</a>.</p>
+                <p class="card-text pdes">O Amortização.calc é um site bem esperto feito em Java EE com o objetivo de realizar o cálculo das amortizações do Modelo Constante, Modelo Americano e da Tabela Price. E apesar de parecer e me comportar como uma página HTML, na verdade sou um JSP! Quer saber mais sobre JSP? Então <a target="_blank" href='https://pt.wikipedia.org/wiki/JavaServer_Pages'>clica aqui</a>.</p>
             </div>
         </div>
 
