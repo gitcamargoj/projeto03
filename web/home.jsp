@@ -1,7 +1,7 @@
 <%-- 
     Document   : home
     Created on : 27-Mar-2018, 16:18:25
-    Author     : junior
+    Author     : JOSEANTONIODECAMARGO
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -65,7 +65,7 @@
                     <div class="card-body">
                         <h5 class="card-title h5body">Modelo Constante</h5>
                         <p class="card-text pbody">Digite os dados solicitados a baixo para calcular a amortização pelo Modelo Constante.</p>
-                        <form action="jurossimples">
+                        <form action="amortizacao-constante.jsp">
                             <table>
                                 <tr><td><input class="form-control" type="text" name="capital" placeholder="Capital (montante)"></td></tr>
                                 <tr><td><input class="form-control" type="text" name="taxa" placeholder="Taxa (em decimal)"></td></tr>
@@ -81,7 +81,7 @@
                     <div class="card-body">
                         <h5 class="card-title h5body">Modelo Americano</h5>
                         <p class="card-text pbody">Digite os dados solicitados a baixo para calcular a amortização pelo Modelo Americano.</p>
-                        <form action="juroscomposto">
+                        <form action="amortizacao-americana.jsp">
                             <table>
                                 <tr><td><input class="form-control" type="text" name="capital" placeholder="Capital (montante)"></td></tr>
                                 <tr><td><input class="form-control" type="text" name="taxa" placeholder="Taxa (em decimal)"></td></tr>
@@ -97,7 +97,7 @@
                     <div class="card-body">
                         <h5 class="card-title h5body">Tabela Price</h5>
                         <p class="card-text pbody">Digite os dados solicitados a baixo para calcular a amortização pela Tabela Price.</p>
-                        <form action="juroscomposto">
+                        <form action="tabela-price.jsp">
                             <table>
                                 <tr><td><input class="form-control" type="text" name="capital" placeholder="Capital (montante)"></td></tr>
                                 <tr><td><input class="form-control" type="text" name="taxa" placeholder="Taxa (em decimal)"></td></tr>
