@@ -39,10 +39,11 @@
         <% int periodo = Integer.parseInt(request.getParameter("periodo"));
         double txjuros = (Float.parseFloat(request.getParameter("taxa")) / 100);
         double capital = Float.parseFloat(request.getParameter("capital" ));
-        double juros;
+        double juros = 0;
         double saldo = capital;
-
+        double amortizacao = 0;
         double pmt = capital / ((1 - Math.pow(1 + txjuros, -periodo)) / txjuros);
+        double amortizacaoAc = 0, jurosAc = 0, pmtAc = pmt * periodo;
         
         int i = 0;
         
@@ -54,13 +55,11 @@
                 <div class="card-body">
                     <h5 class="card-title h5body">Amortização Calculada</h5>
                     <p class="card-text pbody">Informações do calculo realizado</p>
-                    <p class="card-text pbody">Emprestimo inicial de R$: <%= String.format("%.2f", capital) %></p>
+                    <p class="card-text pbody">Empréstimo inicial de R$: <%= String.format("%.2f", capital) %></p>
                     <p class="card-text pbody">Com uma taxa de juros de <%= String.format("%.0f", txjuros * 100) %>% ao mês</p>
             
                 <% if (txjuros == 1)  {%><p class="card-text pbody">Informações do calculo realizado</p>
                 <%} else {%> <p class="card-text pbody">em um período de <%= periodo %> meses</p> <% } %>
-                                 
-        <% txjuros= txjuros/100; %>
         
         <center><div><button class="btn btn-primary btn-lg btn-block bttbody" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Expandir Parcela(s)</button></div></center>
         <div class="collapse" id="collapseExample">
@@ -74,16 +73,21 @@
             <% for (i=0; i <= periodo; i++){ %>
                 <% if (i < 1) {%>
                 <tr>
-                <tbody><td><b><%= i %></b></td><td><%= capital %></td><td>---</td><td>---</td><td>---</td></tbody>
+                <tbody><td><b><%= i %></b></td><td><%= saldo %></td><td>---</td><td>---</td><td>---</td></tbody>
                 </tr>
                 <% } else {
-                juros = (saldo * txjuros) * 100;
-                saldo -= (pmt - juros); %>
+                juros = saldo * txjuros;
+                saldo -= (pmt - juros); 
+                amortizacao = pmt - juros; 
+                amortizacaoAc += amortizacao;
+                jurosAc += juros;
+                %>
                  
-                <tbody><tr><td><b><%= i %></b></td><td><%= String.format("%.2f", saldo) %></td><td><%= String.format("%.2f", pmt - juros) %></td><td><%= String.format("%.2f", juros) %></td><td><%= String.format("%.2f", pmt) %></td></tr></tbody>
+                <tbody><tr><td><b><%= i %></b></td><td><%= String.format("%.2f", saldo) %></td><td><%= String.format("%.2f", amortizacao) %></td><td><%= String.format("%.2f", juros) %></td><td><%= String.format("%.2f", pmt) %></td></tr></tbody>
                 <% }}  %>
-
              
+                <tbody><tr><td><b>Total</b></td><td>---</td><td><%= String.format("%.2f", amortizacaoAc) %></td><td><%= String.format("%.2f", jurosAc) %></td><td><%= String.format("%.2f", pmtAc) %></td></tr></tbody>
+                
         </table></center><div class="container">
         
         </div>
