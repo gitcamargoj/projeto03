@@ -1,7 +1,5 @@
 <%-- 
-    Document   : amortizacao-americana
-    Created on : Apr 2, 2018, 8:21:00 PM
-    Author     : JOSEANTONIODECAMARGO
+    Author     : Allan P. Cabral
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
